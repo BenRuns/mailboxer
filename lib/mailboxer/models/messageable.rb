@@ -82,6 +82,21 @@ module Mailboxer
 
         message.deliver false, sanitize_text
       end
+      
+      def start_existing_conversation(convo,recipients, msg_body, subject, sanitize_text=true, attachment=nil, message_timestamp = Time.now)
+          message = Mailboxer::MessageBuilder.new({
+          :sender       => self,
+          :conversation => convo,
+          :recipients   => recipients,
+          :body         => msg_body,
+          :subject      => subject,
+          :attachment   => attachment,
+          :created_at   => message_timestamp,
+          :updated_at   => message_timestamp
+        }).build
+
+        message.deliver false, sanitize_text
+      end
 
       #Basic reply method. USE NOT RECOMENDED.
       #Use reply_to_sender, reply_to_all and reply_to_conversation instead.
