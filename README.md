@@ -1,3 +1,7 @@
+
+### This is a forked project from mailboxer. I added some features that I wanted for my project to make it easier to attach and start a single conversation on a model.... my advice is to fork the original branch as this one is a little bit hacked and the changes are untested outside of my personal project.
+
+
 # Mailboxer [![Build Status](https://travis-ci.org/mailboxer/mailboxer.svg?branch=master)](https://travis-ci.org/mailboxer/mailboxer) [![Gem Version](https://badge.fury.io/rb/mailboxer.png)](http://badge.fury.io/rb/mailboxer) [![](https://gemnasium.com/ging/mailboxer.png)](https://gemnasium.com/ging/mailboxer)
 
 This project is based on the need for a private message system for [ging
